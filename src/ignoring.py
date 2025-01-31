@@ -11,7 +11,7 @@ def read_gitignore(repo_path: str) -> list[str]:
             for line in gitignore_file:
                 line = line.strip()
                 if line and not line.startswith('#'):
-                    ignore_patterns.append(line)
+                    ignore_patterns.append(line.rstrip('/'))
 
     except FileNotFoundError:
         print(f"Файл {gitignore_path} не найден.")
