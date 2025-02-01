@@ -1,3 +1,4 @@
+# arg_parser.py
 import argparse
 
 
@@ -9,5 +10,8 @@ def parse_args():
                         help='Путь к папке с репозиторием')
     parser.add_argument('--output', default='output.txt', required=False, type=str,
                         help='Имя файла для сохранения содержимого')
+    parser.add_argument('--no_copy', action='store_true', default=False,
+                        help='Не копировать в буфер')
 
     return parser.parse_args()
+

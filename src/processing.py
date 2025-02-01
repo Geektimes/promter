@@ -1,14 +1,11 @@
 import os
+from src.file_extensions import file_extensions
 from src.ignoring import (read_gitignore,
                           should_ignore)
 
 
-text_extensions = ['.txt', '.md', '.log', '.csv',
-                   '.py', '.cfg', '.conf', '.json', '.yml', '.yaml']
-
-
 def is_text_file(filename: str) -> bool:
-    return filename.lower() == 'dockerfile' or any(filename.endswith(ext) for ext in text_extensions)
+    return filename.lower() == 'dockerfile' or any(filename.endswith(ext) for ext in file_extensions)
 
 
 def process_folder(repo_path: str, output_file: str) -> None:

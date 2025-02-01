@@ -4,7 +4,7 @@ import fnmatch
 
 def read_gitignore(repo_path: str) -> list[str]:
     gitignore_path = os.path.join(repo_path, '.gitignore')
-    ignore_patterns = []
+    ignore_patterns = ['output.txt']
 
     try:
         with open(gitignore_path, 'r', encoding='utf-8') as gitignore_file:
