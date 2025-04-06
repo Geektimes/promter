@@ -1,2 +1,2 @@
-file_extensions = ['.txt', '.md', '.log', '.csv',
-                   '.py', '.cfg', '.conf', '.json', '.yml', '.yaml']
+file_extensions = ['.md', '.log', '.csv',
+                   '.py', '.cfg', '.env', '.conf', '.json', '.yml', '.yaml', '.php']
