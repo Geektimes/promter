@@ -1,1 +1,0 @@
-python D:/Projects/promter/1/promter.py --repo_path D:/Projects/PHP/00 --output D:/Projects/PHP/00/output.txt`
